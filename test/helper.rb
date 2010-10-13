@@ -2,6 +2,7 @@ $:.unshift(File.expand_path("../lib", File.dirname(__FILE__)))
 
 require "cutest"
 require "rack/test"
+require "sinatra/base"
 require "sinatra/security"
 
 class Cutest::Scope
