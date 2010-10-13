@@ -1,5 +1,3 @@
-require "sinatra/base"
-
 module Sinatra
   module Security
     VERSION = "0.2.1"
@@ -56,5 +54,5 @@ module Sinatra
     end
   end
 
-  register Security
+  register Security if defined?(Base)
 end
